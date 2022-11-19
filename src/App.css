@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+}
+:root {
+    --red-suit-color: #ff0000b2;
+    
+    
+    --card-height: 20px;
+    --card-width: 300px;
+    
+    --card-font-size: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    /* transition: 0.3s; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.deck {
+    font-size: var(--card-font-size);
+    display: grid;
+    place-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.diamonds {
+    background-color: var(--red-suit-color);
+    height: var(--card-height);
+    width:var(--card-width);
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.clubs {
+    background-color: black;
+    height: var(--card-height);
+    width:var(--card-width);
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hearts {
+    background-color: var(--red-suit-color);
+    height: var(--card-height);
+    width:var(--card-width);
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.spades {
+    background-color: black;
+    height: var(--card-height);
+    width:var(--card-width);
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.selected{
+    background-color: #d79a9a;
+    filter:brightness(1.4);
+    transition: 0.3s;
+}
+
+.card:nth-child(-n+26){
+    /* grid-area: left; */
+}
+
+.card:nth-child(n+27){
+    /* grid-area: right; */
+}
+
+.shuffling{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    transition: 2s;
 }
