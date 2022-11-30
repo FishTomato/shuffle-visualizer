@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shuffle-visualizer/static/css/main.2f5d8a77.css",
+    "main.js": "/shuffle-visualizer/static/js/main.504ac101.js",
+    "index.html": "/shuffle-visualizer/index.html",
+    "main.2f5d8a77.css.map": "/shuffle-visualizer/static/css/main.2f5d8a77.css.map",
+    "main.504ac101.js.map": "/shuffle-visualizer/static/js/main.504ac101.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2f5d8a77.css",
+    "static/js/main.504ac101.js"
+  ]
+}
